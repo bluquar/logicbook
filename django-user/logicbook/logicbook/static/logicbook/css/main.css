@@ -1,0 +1,107 @@
+html,body {
+    margin:0;
+    padding:0;
+    height:100%; /* needed for container min-height */
+    width: 100%;
+    background:#fff;
+
+    font-family:arial,sans-serif;
+    font-size:small;
+    color:#111;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: stretch;
+}
+
+nav {
+	flex: 0 1 5em;
+}
+
+div.nav-wrapper {
+	height: 100%;
+	margin: 0 auto;
+}
+
+#container {
+	display: flex;
+	justify-content: space-around;
+	align-items: stretch;
+	flex: 1.1 0.9 90%;
+}
+
+.libPane {
+	flex: 1 0.5 25%;
+	overflow-y: scroll;
+	border-right: dotted;
+}
+
+.workspacePane {
+	flex: 1.125 1 75%;
+	background-image: url("/static/logicbook/images/square.svg");
+	background-size: 20px 20px;
+	background-position: -5px -5px;
+}
+
+.buttonBar {
+	display: flex;
+}
+
+button.action {
+	margin: 10px 10px 10px 10px;
+	padding: 0px 10px 0px 10px;
+	overflow-x: scroll;
+}
+
+.libPane, .lipPane ul {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: stretch;
+}
+
+.libPane ul {
+	box-shadow: 0px 3px 1px #aaa;
+	background: linear-gradient(#dedede, #fefefe);
+	margin: 4px 5px 4px 5px;
+}
+
+.libPane h3 {
+	font-size: 12px;
+	font-weight: 900;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.libPane ul li {
+	box-shadow: 0px 5px 2px #dddddd;
+	background: linear-gradient(#e3e3e3, #f0f0f0);
+	margin: 10px 10px 10px 10px;
+	font-family: monospace;
+	font-size: 12pt;
+	padding: 0px 10px 0px 10px;
+	border: solid 1px #cccccc;
+}
+
+.errorList {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.errorList li {
+	box-shadow: 0px 5px 5px #dddddd;
+	background: linear-gradient(#e3a3e3, #f0b0f0);
+	margin: 10px 10px 10px 10px;
+	padding: 0px 10px 0px 10px;
+	border: solid 1px #cccccc;
+}
+
+.errorHTML {
+	max-height: 150px;
+	overflow-y: scroll;
+}
+
